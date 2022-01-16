@@ -19,6 +19,6 @@ public class CompaniesValidationsServiceImpl implements CompaniesValidationsServ
     @Override
     public void validateBeforeUpdating(CompanyEntity companyToBeUpdated) {
         ofNullable(companyToBeUpdated.getId()).orElseThrow(IdNotPresentException::new);
-        this.retrievingCompaniesService.retrieveCompanyBy(companyToBeUpdated.getId()).orElseThrow(() -> new CompanyNotFoundByIdException(companyToBeUpdated.getId()));
+        this.retrievingCompaniesService.retrieveInstanceBy(companyToBeUpdated.getId()).orElseThrow(() -> new CompanyNotFoundByIdException(companyToBeUpdated.getId()));
     }
 }

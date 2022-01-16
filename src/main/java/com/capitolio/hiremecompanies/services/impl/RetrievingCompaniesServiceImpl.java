@@ -17,12 +17,12 @@ public class RetrievingCompaniesServiceImpl implements RetrievingCompaniesServic
     private final CompaniesRepository companiesRepository;
 
     @Override
-    public Optional<CompanyEntity> retrieveCompanyBy(Long id) {
+    public Optional<CompanyEntity> retrieveInstanceBy(Long id) {
         return this.companiesRepository.findById(id);
     }
 
     @Override
-    public Page<CompanyEntity> retrieveCompaniesBy(Integer pageNumber, Integer pageSize) {
+    public Page<CompanyEntity> retrieveInstanceBy(Integer pageNumber, Integer pageSize) {
         return this.companiesRepository.findAll(PageRequest.of(pageNumber, pageSize));
     }
 }

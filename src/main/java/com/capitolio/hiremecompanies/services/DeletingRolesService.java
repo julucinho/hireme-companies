@@ -4,5 +4,5 @@ import com.capitolio.hiremecompanies.services.commons.DeletingService;
 import org.springframework.stereotype.Service;
 
 @Service
-public interface DeletingCompaniesService extends DeletingService<Long> {
+public interface DeletingRolesService extends DeletingService<Long> {
 }

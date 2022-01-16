@@ -1,7 +1,8 @@
-package com.capitolio.hiremecompanies.utils;
+package com.capitolio.hiremecompanies.mappers;
 
 import com.capitolio.hiremecompanies.dtos.CompanyDto;
 import com.capitolio.hiremecompanies.entities.CompanyEntity;
+import com.capitolio.hiremecompanies.mappers.commons.Mapper;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass

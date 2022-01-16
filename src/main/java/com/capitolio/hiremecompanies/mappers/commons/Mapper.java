@@ -1,18 +1,18 @@
-package com.capitolio.hiremecompanies.utils;
+package com.capitolio.hiremecompanies.mappers.commons;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass
-class Mapper {
+public class Mapper {
 
     public static MapperAux map(Object source){
         return new MapperAux(new ObjectMapper(), source);
     }
 
     @AllArgsConstructor
-    static class MapperAux {
+    public static class MapperAux {
         private final ObjectMapper objectMapper;
         private final Object source;
 

@@ -8,10 +8,9 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class CompanyDto extends Dto {
-
+public class RoleDto extends Dto {
     private Long id;
     private String name;
-    private String email;
-
+    private String description;
+    private CompanyDto company;
 }

@@ -12,7 +12,7 @@ public class DeletingCompaniesServiceImpl implements DeletingCompaniesService {
     private final CompaniesRepository companiesRepository;
 
     @Override
-    public void deleteCompanyBy(Long id) {
+    public void deleteInstanceByIts(Long id) {
         this.companiesRepository.deleteById(id);
     }
 }
